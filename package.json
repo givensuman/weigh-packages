@@ -1,5 +1,5 @@
 {
-    "name": "package-size",
+    "name": "weigh-packages",
     "version": "1.0.0",
     "description": "Comment inline dependency sizes in your package.json",
     "keywords": [
@@ -7,7 +7,7 @@
     ],
     "main": "index.js",
     "type": "module",
-    "repository": "https://www.github.com/givensuman/package-size",
+    "repository": "https://www.github.com/givensuman/weigh-packages",
     "author": "Given Suman",
     "license": "MIT",
     "private": false,
