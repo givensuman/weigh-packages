@@ -2,6 +2,9 @@
     "name": "package-size",
     "version": "1.0.0",
     "description": "Comment inline dependency sizes in your package.json",
+    "keywords": [
+        "cli", "package", "size", "determination"
+    ],
     "main": "index.js",
     "type": "module",
     "repository": "https://www.github.com/givensuman/package-size",
@@ -9,15 +12,11 @@
     "license": "MIT",
     "private": false,
     "scripts": {
-        "run": "node .",
-        "build": "rollup -c"
+        "run": "node ."
     },
     "dependencies": {
         "chalk": "^5.0.1",
         "cli-table3": "^0.6.1",
         "node-fetch": "^3.2.3"
-    },
-    "devDependencies": {
-        "rollup": "^2.70.1"
     }
 }
