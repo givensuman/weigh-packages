@@ -1,7 +1,10 @@
+#!/usr/bin/env node
+
 import fs from "fs"
 import fetch from "node-fetch"
 import Table from "cli-table3"
 import chalk from "chalk"
+import { Spinner } from "cli-spinner"
 
 // Read package.json and write to variable
 let packages = fs.readFileSync(
@@ -43,6 +46,9 @@ const getData = async (name, version) => {
 
 // Instantiate array for the data on packages
 let packagesData = []
+let spinner = new Spinner()
+spinner.setSpinnerString(19)
+spinner.start()
 
 // Populate array with data
 for (const key in packages.dependencies) {
@@ -89,4 +95,6 @@ packagesData.forEach(object => {
     display.push(Object.values(object))
 })
 
+spinner.stop()
+console.log('\n')
 console.log(display.toString())

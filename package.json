@@ -3,7 +3,10 @@
     "version": "1.0.0",
     "description": "Comment inline dependency sizes in your package.json",
     "keywords": [
-        "cli", "package", "size", "determination"
+        "cli",
+        "package",
+        "size",
+        "determination"
     ],
     "main": "index.js",
     "type": "module",
@@ -16,7 +19,11 @@
     },
     "dependencies": {
         "chalk": "^5.0.1",
+        "cli-spinner": "^0.2.10",
         "cli-table3": "^0.6.1",
         "node-fetch": "^3.2.3"
+    },
+    "devDependencies": {
+        "weigh-packages": "^1.0.0"
     }
 }
