@@ -19,3 +19,11 @@ Then run the script in any folder with a package.json!
 ```
 cd my-project && weigh-packages
 ```
+
+By default it sorts in the order of your package.json, which should be alphabetical. You can add `size` or `files` as a flag to sort by package size or file count, respectively:
+
+```bash
+weigh-packages size
+```
+
+Enjoy!
