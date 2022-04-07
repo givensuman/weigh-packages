@@ -1,6 +1,6 @@
 {
     "name": "weigh-packages",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Comment inline dependency sizes in your package.json",
     "keywords": [
         "cli",
@@ -9,7 +9,7 @@
         "determination"
     ],
     "main": "index.js",
-    "bin": "src/index.js",
+    "bin": "./index.js",
     "type": "module",
     "repository": "https://www.github.com/givensuman/weigh-packages",
     "author": "Given Suman",
@@ -24,5 +24,7 @@
         "cli-table3": "^0.6.1",
         "node-fetch": "^3.2.3"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "weigh-packages": "^1.0.2"
+    }
 }
