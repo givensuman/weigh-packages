@@ -1,7 +1,7 @@
 {
     "name": "weigh-packages",
-    "version": "1.0.2",
-    "description": "Comment inline dependency sizes in your package.json",
+    "version": "1.0.3",
+    "description": "Lightweight CLI tool to see the size of your package dependencies",
     "keywords": [
         "cli",
         "package",
