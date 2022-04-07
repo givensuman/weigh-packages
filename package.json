@@ -1,6 +1,6 @@
 {
     "name": "weigh-packages",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Lightweight CLI tool to see the size of your package dependencies",
     "keywords": [
         "cli",
