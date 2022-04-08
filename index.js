@@ -72,19 +72,23 @@ const totalDependencies = reducer("dependencies")
 // Use totals to calculate percents
 packagesData.forEach((object, index) => {
     packagesData[index] = {
-        name: object.name,
-        size: object.size,
         sizepc: Math.floor(object.size* 100 / totalSize),
         ...object
     }
 })
 
 const titles = [
-    "name", "version", "size (kB)", "size (%)", "files", "dependencies", "license"
+    { key: "name", title: "name" },
+    { key: "version", title: "version" },
+    { key: "size", title: "size (kB)" },
+    { key: "sizepc", title: "size (%)" },
+    { key: "files", title: "files" },
+    { key: "dependencies", title: "dependencies" },
+    { key: "license", title: "license" }
 ]
 // Create table
 const display = new Table({
-    head: titles.map(item => chalk.whiteBright(item))
+    head: titles.map(item => chalk.whiteBright(item.title))
 })
 
 // Optional sorting in arguments
@@ -100,17 +104,20 @@ if (args.length > 0) {
     }
 }
 
-// Populate table
 packagesData.forEach((object, index) => {
-    display.push(Object.values(object).map(item => 
-        index % 2 ? chalk.blue(item) : chalk.cyan(item)
-    ))
+    display.push(
+        titles.map(title => 
+            index % 2 
+            ? chalk.blue(object[title.key]) 
+            : chalk.cyan(object[title.key])
+        )
+    )
 })
 
 display.push(
     Array(Object.values(packagesData.length)).fill(""), 
     [
-        "total",
+        chalk.whiteBright("total"),
         "",
         totalSize,
         100,

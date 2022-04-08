@@ -95,13 +95,3 @@ web-streams-polyfill@^3.0.3:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/web-streams-polyfill/-/web-streams-polyfill-3.2.0.tgz#a6b74026b38e4885869fb5c589e90b95ccfc7965"
   integrity sha512-EqPmREeOzttaLRm5HS7io98goBgZ7IVz79aDvqjD0kYXLtFZTc0T/U6wHTPKyIjb+MdN7DFIIX6hgdBEpWmfPA==
-
-weigh-packages@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/weigh-packages/-/weigh-packages-1.0.2.tgz#a5e39dafd117e3b70e6b1363c7839c59a5a89ae9"
-  integrity sha512-V9IDsYPVTgAmIXqqOBOk6fHOHulKL4MsX00oSyLgjIzjNYCttdQvvFTaz8+dtGd9Wxs9j8LzfQ6JdWggC4kWCQ==
-  dependencies:
-    chalk "^5.0.1"
-    cli-spinner "^0.2.10"
-    cli-table3 "^0.6.1"
-    node-fetch "^3.2.3"

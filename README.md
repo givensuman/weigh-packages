@@ -31,10 +31,10 @@ weigh-packages --size
 
 |name |version |size (kB) |size (%) |files |dependencies |license
 |-- |-- |-- |-- |-- |-- |--
-|node-fetch |105.816 |38 |3.2.3 |17 |3 |MIT
-|chalk |41.336 |15 |5.0.1 |12 |0 |MIT
-|cli-table3 |41.117 |15 |0.6.1 |9 |2 |MIT
-|cli-spinner |85.107 |31 |0.2.10 |7 |0 |MIT
+|node-fetch |3.2.3 |105.816 |38 |17 |3 |MIT
+|cli-spinner |0.2.10 |85.107 |31 |7 |0 |MIT
+|chalk |5.0.1 |41.336 |15 |12 |0 |MIT
+|cli-table3 |0.6.1 |41.117 |15 |9 |2 |MIT
 | | 
 |total | |273.376 |100 |45 |5 |
 

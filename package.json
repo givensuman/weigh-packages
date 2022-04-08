@@ -1,6 +1,6 @@
 {
     "name": "weigh-packages",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Lightweight CLI tool to see the size of your package dependencies",
     "keywords": [
         "cli",
@@ -23,8 +23,5 @@
         "cli-spinner": "^0.2.10",
         "cli-table3": "^0.6.1",
         "node-fetch": "^3.2.3"
-    },
-    "devDependencies": {
-        "weigh-packages": "^1.0.2"
     }
 }
